@@ -9,7 +9,7 @@ Plug 'nightsense/stellarized'
 call plug#end()
 
 "only set colorscheme if it is installed
-if isdirectory($HOME . '/.vim/plugins/stellarized')
+if isdirectory($HOME . '.vim/plugins/stellarized')
   set background=dark
   colorscheme stellarized
 endif
