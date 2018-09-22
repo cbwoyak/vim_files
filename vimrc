@@ -8,12 +8,6 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'nightsense/stellarized'
 call plug#end()
 
-"only set colorscheme if it is installed
-if isdirectory($HOME . '.vim/plugins/stellarized')
-  set background=dark
-  colorscheme stellarized
-endif
-
 "tabs
 set tabstop=2
 set shiftwidth=2
@@ -24,3 +18,9 @@ syntax on
 
 filetype plugin indent on
 set nu
+
+"only set colorscheme if it is installed
+if isdirectory($HOME . '.vim/plugins/stellarized')
+  set background=dark
+  colorscheme stellarized
+endif
