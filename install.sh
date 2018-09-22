@@ -15,4 +15,3 @@ then
 fi
 mkdir $vim_dir
 cp -r autoload $vim_dir/autoload
-cp -r plugins $vim_dir/plugins
