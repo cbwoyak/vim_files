@@ -1,11 +1,26 @@
+"List plugins, install with PlugInstall
+call plug#begin('~/.vim/plugins')
+
+"dart language plugin
+Plug 'dart-lang/dart-vim-plugin'
+
+" color scheme
+Plug 'nightsense/stellarized'
+call plug#end()
+
+"only set colorscheme if it is installed
+if isdirectory($HOME . '/.vim/plugins/stellarized')
+  set background=dark
+  colorscheme stellarized
+endif
+
+"tabs
 set tabstop=2
 set shiftwidth=2
 set expandtab
-filetype plugin indent on
-syntax on
-set nu
-colorscheme delek
 
-call plug#begin('~/.vim/plugins')
-Plug 'dart-lang/dart-vim-plugin'
-call plug#end()
+" syntax highlighting
+syntax on
+
+filetype plugin indent on
+set nu
