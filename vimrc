@@ -9,15 +9,20 @@ Plug 'nightsense/stellarized'
 call plug#end()
 
 "tabs
-set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set expandtab
+filetype plugin indent on
 
 " syntax highlighting
 syntax on
 
-filetype plugin indent on
+" limit lines to 80 characters
+set textwidth=80
+
+"enable line numbers and curser location
 set nu
+set ru
 
 "only set colorscheme if it is installed
 if isdirectory($HOME . '/.vim/plugins/stellarized')
