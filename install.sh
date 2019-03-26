@@ -14,5 +14,6 @@ then
   mv $vim_dir $vim_bak
 fi
 mkdir $vim_dir
+cp -r after $vim_dir/after
 cp -r autoload $vim_dir/autoload
 vim +PlugInstall +qall
