@@ -15,3 +15,4 @@ then
 fi
 mkdir $vim_dir
 cp -r autoload $vim_dir/autoload
+vim +PlugInstall +qall
