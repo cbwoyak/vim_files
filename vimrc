@@ -8,7 +8,7 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'nightsense/stellarized'
 call plug#end()
 
-"tabs
+"Default tab settings
 set softtabstop=2
 set shiftwidth=2
 set expandtab
